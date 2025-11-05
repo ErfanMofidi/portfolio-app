@@ -1,0 +1,104 @@
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  min-height: calc(100vh - 60px);
+
+  scroll-margin-top: 80px;
+}
+
+.projects-header {
+  text-align: center;
+  line-height: 2em;
+}
+
+hr {
+  color: #ffffff1e;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.project {
+  position: relative;
+  /* ✅ parent of button */
+  flex: 1 1 calc(30% - 1rem + 1em);
+  max-width: calc(30% - 1rem + 1em);
+  overflow: hidden;
+  border-radius: 0.8em;
+  background: rgba(5, 0, 27, 0.723);
+  padding: 1.5em 0.75em;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.description-header{
+  font-size: 2em;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+
+.project-img {
+  width: 100%;
+  display: block;
+  transition: all 0.3s ease-in-out;
+  filter: brightness(0.2);
+  border-radius: 0.8em;
+  cursor: pointer;
+  position: relative; /* make image the reference for button */
+}
+
+.project-img.hovered {
+  filter: brightness(0.5);
+  /* adds blur instead of opacity */
+  transform: scale(1.05);
+  /* optional: slight zoom effect */
+}
+
+/* Button initially hidden */
+.view-btn {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* Button visible on hover */
+.view-btn.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .project {
+    flex: 1 1 45%; /* 2 per row */
+    max-width: 45%;
+  }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 600px) {
+  .project {
+    flex: 1 1 100%; /* full width */
+    max-width: 100%;
+  }
+
+  .description-header {
+    font-size: 1.3em;
+  }
+
+  .description-p {
+    font-size: 0.95em;
+  }
+}

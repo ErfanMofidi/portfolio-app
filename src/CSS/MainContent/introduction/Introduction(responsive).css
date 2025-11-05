@@ -1,0 +1,172 @@
+@media (max-width:576px) {
+  .introduction{
+    padding: 0 20px;
+    height: fit-content;
+    margin: 10% 0;
+  }
+
+  .introduction-text{
+    margin-bottom: 0;
+  }
+  .overview-header{
+    font-size: 55px;
+  }
+  .overview-text{
+    width: 90%;
+    line-height: 20px;
+    margin-bottom: 50px;
+  }
+
+  .appliance-skills-container{
+    row-gap: 25px;
+  }
+
+  .appliance-skills{
+    height: fit-content;
+    padding: 10px 0;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .frontend-image{
+    height: 30px;
+    width: 30px;
+    z-index: 5;
+  }
+
+  .frontend-text{
+    font-size: 12.5px;
+    font-weight: 500;
+  }
+
+  .coding-languages{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: fit-content;
+    
+    padding:0;
+  }
+
+  .html-logo,
+  .css-logo,
+  .js-logo{
+    width: 40px;
+    height: 40px;
+    margin: 8% 2%;
+  }
+  .react-logo{
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (min-width:576px) and (max-width:768px) {
+  .introduction{
+    padding: 0 20px;
+    height: fit-content;
+    margin: 10% 0;
+  }
+
+  .introduction-text{
+    margin-bottom: 0;
+  }
+  .overview-header{
+    font-size: 55px;
+  }
+  .overview-text{
+    width: 100%;
+    line-height: 20px;
+    margin-bottom: 50px;
+  }
+
+  .appliance-skills{
+    height: fit-content;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 200px;
+  }
+
+  .frontend-text{
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  .coding-languages{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    
+    padding: 50px 0;
+  }
+
+  .html-logo, .css-logo, .js-logo{
+    height: 60px; 
+    width: 60px;
+    margin: 6% 3%;
+  }
+  .react-logo{
+    height: 105px;
+    width: 105px;
+  }
+
+}
+
+@media (min-width:768px) and (max-width:992px) {
+  .introduction{
+    padding: 0 20px;
+    height: fit-content;
+    margin: 10% 0;
+  }
+
+  .introduction-text{
+    margin-bottom: 0;
+  }
+  .overview-header{
+    font-size: 55px;
+  }
+  .overview-text{
+    width: 100%;
+    line-height: 20px;
+    margin-bottom: 50px;
+  }
+
+  .appliance-skills{
+    height: fit-content;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  .frontend-text{
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  .coding-languages{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    
+    padding: 50px 0;
+  }
+
+  .html-logo, .css-logo, .js-logo{
+    height: 60px; 
+    width: 60px;
+    margin: 6% 3%;
+  }
+  .react-logo{
+    height: 105px;
+    width: 105px;
+  }
+
+}

@@ -1,0 +1,123 @@
+.form-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: calc(100vh - 60px);
+  height: fit-content;
+  width: 100%;
+  margin: 25% 30px;
+  margin-bottom: 0;
+
+  scroll-margin-top: 80px;
+}
+
+.form{
+  height: fit-content;
+  width: 40%;
+  padding: 10px 25px;
+  border-radius: 20px;
+  background: rgba(5, 0, 27, 0.723);
+}
+
+.form-header{
+  font-size: 50px;
+}
+
+.name-input-container,
+.email-input-container,
+.message-input-container{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  position: relative;
+  margin: 20px 0;
+  width: 90%;
+}
+
+.name-input,
+.email-input,
+.message-input{
+  width: 100%;
+  padding: 16px 12px 8px;
+  border: 2px solid #640494;
+  border-radius: 8px;
+  background: transparent;
+  font-size: 16px;
+  color: white;
+}
+
+.message-input{
+  height: 100px;
+}
+
+.name-label,
+.email-label,
+.message-label{
+  position: absolute;
+  top: 30%;
+  left: 20px;
+  transition: 0.35s ease all;
+  color: #ffffff71;
+}
+
+.name-label-focused,
+.email-label-focused,
+.message-label-focused{
+  position: absolute;
+  top: -7px;
+  left: 8px;
+  font-size: 12px;
+  background-color: rgb(5, 0, 27);
+  color: #ffffff;
+}
+
+.status-message-container{
+  width: 90%;
+  height: 90px;
+  text-align: center;
+}
+
+.submit-button{
+  margin: 0 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: solid 1px #ffffff5b;
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.submit-button:hover{
+  background-color: #64049490;
+}
+
+.submit-button:active{
+  background-color: #640494;
+}
+
+.globe-container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.globe-image{
+  height: 768px;
+  width: 512px;
+  transition: all 0.6s ease;
+}
+
+.globe-image:hover{
+  transform: rotateX(-3deg) scale(1.02);
+}
+
+textarea{
+  resize: none;
+}

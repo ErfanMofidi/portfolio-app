@@ -1,0 +1,34 @@
+.footer-container{
+  align-items: center;
+  text-align: center;
+  background-color: rgba(5, 0, 27, 0.723);
+
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  padding: 5px;
+
+  transition: color 0.3s ease;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 5px;
+}
+
+.email-icon,
+.github-icon,
+.linkedin-icon{
+  height: 40px;
+  width: 40px;
+  transition: all 0.3s ease-in-out;
+}
+
+.email-icon:hover,
+.github-icon:hover,
+.linkedin-icon:hover{
+  transform: scale(1.2);
+}

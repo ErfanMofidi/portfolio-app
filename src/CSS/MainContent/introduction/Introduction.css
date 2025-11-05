@@ -1,0 +1,110 @@
+.introduction{
+  padding: 0 50px;
+  min-height: calc(100vh - 60px);
+  height: fit-content;
+  margin: 10% 0;
+  width: 100%;
+}
+
+.introduction-text{
+  margin-bottom: 0;
+  color: #ffffff71;
+}
+.overview-header{
+  font-size: 50px;
+  margin-top: 0;
+}
+.overview-text{
+  width: 70%;
+  color: #ffffff71;
+  margin-bottom: 50px;
+}
+
+.appliance-skills-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.appliance-skills{
+  height: 45%;
+  width: 60%;
+  position: relative;
+  border-radius: 20px;
+  background: rgb(5, 0, 17);
+  z-index: 0;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  padding: 50px 0;
+  transition: transform 0.4s ease;
+}
+
+@property --angle{
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0deg;
+}
+
+.appliance-skills::before {
+  content: '';
+  position: absolute;
+  inset: -3px; /* makes it act like a border */
+  border-radius: inherit;
+  background-image: conic-gradient(from var(--angle), #640494, #049494, #640494);
+  animation: animate 4s linear infinite;
+  z-index: -1;
+  filter: blur(15px);
+}
+
+.appliance-skills::after {
+  content: '';
+  position: absolute;
+  inset: 0; /* sits exactly behind */
+  border-radius: inherit;
+  background: rgb(5, 0, 17); /* inner background again */
+  z-index: -1;
+}
+
+
+@keyframes animate{
+  to{
+    --angle: 360deg;
+  }
+}
+
+.frontend-image{
+  height: 75px;
+  width: 75px;
+  z-index: 5;
+  margin: 0 auto;
+}
+
+.frontend-text{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.coding-languages{
+  height: 45%;
+  width: 60%;
+  margin: 0 auto;
+  
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.logo{
+  height: 80px; 
+  width: 80px;
+  margin: 30px 10px;
+}
+
+@keyframes spin {
+  from { transform: rotateY(0deg); }
+  to   { transform: rotateY(360deg); }
+}

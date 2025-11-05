@@ -1,0 +1,50 @@
+.presentation{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  width: 100%;
+  min-height: calc(100vh - 60px);
+}
+
+.vertical-line-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px; /* spacing */
+  margin-right: 10px;
+}
+
+/* Circle at the top */
+.vertical-line-container .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #640494; /* solid violet circle */
+  margin-bottom: 0;
+  z-index: 2;
+}
+
+/* Vertical line */
+.vertical-line-container .line {
+  width: 4px; /* line thickness */
+  height: 40vh; /* line length */
+  background: linear-gradient(to bottom, #640494, transparent);
+  z-index: 1;
+}
+
+.presentation-text{
+  margin-top: -160px;
+}
+.presentation-header{
+  font-size: 70px;
+  margin-bottom: 0;
+}
+.name{
+  color: #640494;
+}
+.presentation-p{
+  margin-top: 15px;
+  width: 350px;
+  font-size: 25px;
+}

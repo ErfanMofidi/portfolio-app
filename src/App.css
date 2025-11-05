@@ -1,0 +1,44 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+
+  height: 100vh;
+  width: 100%;
+
+  background-image: url('./Images/body-background.png');
+  background-size: cover;                  /* Make image cover the whole element */
+  background-position: center;             /* Center it */
+  background-repeat: no-repeat;            /* Prevent tiling */
+  background-attachment: fixed; 
+  
+  color: #ffffff;
+}
+
+.App {
+  height: 100vh;
+  max-width: 100%;
+}
+
+.main-content{
+  padding: 50px;
+  max-width: 100%;
+}
+
+.scroll-item {
+  opacity: 0;              /* hidden by default */
+  transform: translateY(50px); /* slight offset */
+  transition: all 1s ease;
+}
+
+.scroll-item.visible {
+  opacity: 1;              /* fade in */
+  transform: translateY(0); /* move into place */
+}
+
+
+.App, #root, html , body , *{
+  scroll-behavior: smooth;
+}
